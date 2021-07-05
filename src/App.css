@@ -1,13 +1,26 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding: 14px 0;
+  text-align: center;
+  background-color: deepskyblue;
+  color: whitesmoke;
+  margin: 0;
+  font-family: cursive;
+}
+
 .container {
   display: flex;
-  margin: 50px auto;
+  margin: 70px auto;
   max-width: 1300px;
 }
 
 .tree-block {
   width: 35vw;
-  height: 80vh;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 70vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   right: auto;
   display: flex;
@@ -20,5 +33,6 @@
 .employee-details {
   padding: 24px;
   flex-grow: 1;
-  border: 1px solid red;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }

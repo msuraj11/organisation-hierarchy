@@ -8,10 +8,12 @@ const StyledTreeItem = withStyles((theme) => ({
     iconContainer: {
       "& .close": {
         opacity: 0.3,
-        border: "0.2px solid"
+        border: "0.2px solid",
+        borderRadius: "5px"
       },
       "& .remove, .add": {
-        border: "0.2px solid"
+        border: "0.2px solid",
+        borderRadius: "5px"
       }
     },
     group: {
