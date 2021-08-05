@@ -20,7 +20,6 @@
 .tree-block {
   width: 35vw;
   height: 70vh;
-  border-right: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   right: auto;
   display: flex;
@@ -33,7 +32,7 @@
 .node-details-action {
   padding: 24px;
   flex-grow: 1;
-  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
 }
 

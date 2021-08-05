@@ -11,6 +11,7 @@ function App() {
   const [data, setData] = useState({...demoData});
   const [options, setOptions] = useState({});
   const [toggleDetails, toggler] = useState(false);
+  const [toggleActions, actionToggler] = useState(false);
   const [nodeDetails, setNodeDetails] = useState({});
   useEffect(() => {
     if (!isEmpty(data)) {
@@ -29,16 +30,20 @@ function App() {
     toggler(true);
   };
 
+  const handleAddClick = nodeData => {
+    actionToggler(true);
+  }
+
   return (
     <div className="container">
       <h2 className="header">Organisation Hierarchy</h2>
-      {toggleDetails &&
-        <NodeDetails nodeDetailsObj={nodeDetails} open={toggleDetails} handleClose={() => {toggler(false);}} />
+      <NodeDetails nodeDetailsObj={nodeDetails} open={toggleDetails} handleClose={() => {toggler(false);}} />
+      <HierarchyView data={data} getNodeDetails={onNodeClick} handleAddClick={handleAddClick} />
+      {toggleActions &&
+        <div className="node-details-action">
+          <NodeActions options={options} />
+        </div>
       }
-      <HierarchyView data={data} getNodeDetails={onNodeClick} />
-      <div className="node-details-action">
-        <NodeActions options={options} />
-      </div>
     </div>
   );
 }

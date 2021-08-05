@@ -1,152 +1,152 @@
 {
-    "designation": "CEO",
-    "name": "Vijaypal Singh",
-    "level": "0",
-    "type": "employee",
-    "id": "CEO_0",
-    "phoneNumber": 9652429277,
-    "emailId": "VijaypalSingh@organisation.com",
-    "childNodes": [
+  "designation": "CEO",
+  "name": "Vijaypal Singh",
+  "level": "0",
+  "type": "employee",
+  "id": "CEO_0",
+  "phoneNumber": 9652429277,
+  "emailId": "VijaypalSingh@organisation.com",
+  "childNodes": [
+    {
+      "designation": "Head of staff/HR",
+      "name": "Sonali",
+      "level": "1.0",
+      "type": "employee",
+      "id": "headOfStaffHr_1.0",
+      "phoneNumber": 9652929277,
+      "emailId": "Sonali@organisation.com",
+      "childNodes": [
         {
-            "designation": "Head of staff/HR",
-            "name": "Sonali",
-            "level": "1.0",
-            "type": "employee",
-            "id": "headOfStaffHr_1.0",
-            "phoneNumber": 9652929277,
-            "emailId": "Sonali@organisation.com",
-            "childNodes": [
-                {
-                    "id": "IngAustralia_1.0",
-                    "name": "ING Australia",
-                    "type": "team",
-                    "childNodes": [
-                        {
-                            "designation": "Team Member",
-                            "name": "Sonia Yadhav",
-                            "level": "1.0.0",
-                            "type": "employee",
-                            "id": "teamMember_1.0.0",
-                            "phoneNumber": 9555929277,
-                            "emailId": "soniaYadhav@organisation.com",
-                            "childNodes": []
-                        },
-                        {
-                            "designation": "Team Member",
-                            "name": "Raguveer Singh",
-                            "level": "1.0.1",
-                            "type": "employee",
-                            "id": "teamMember_1.0.1",
-                            "phoneNumber": 9555679277,
-                            "emailId": "raghuveerSingh@organisation.com",
-                            "childNodes": []
-                        }
-                    ]
-                },
-                {
-                    "id": "IngSpain_1.0",
-                    "name": "ING Spain",
-                    "type": "team",
-                    "childNodes": [
-                        {
-                            "designation": "Team Member",
-                            "name": "Sailaja",
-                            "level": "1.0.0",
-                            "type": "employee",
-                            "id": "teamMember_1.0.0_1",
-                            "phoneNumber": 9555929277,
-                            "emailId": "soniaYadhav@organisation.com",
-                            "childNodes": []
-                        },
-                        {
-                            "designation": "Team Member",
-                            "name": "Neelam",
-                            "level": "1.0.1",
-                            "type": "employee",
-                            "id": "teamMember_1.0.1_1",
-                            "phoneNumber": 9555679277,
-                            "emailId": "raghuveerSingh@organisation.com",
-                            "childNodes": []
-                        }
-                    ]
-                }
-            ]
+          "id": "IngAustralia_1.0",
+          "name": "ING Australia",
+          "type": "team",
+          "childNodes": [
+            {
+              "designation": "Team Member",
+              "name": "Sonia Yadhav",
+              "level": "1.0.0",
+              "type": "employee",
+              "id": "teamMember_1.0.0",
+              "phoneNumber": 9555929277,
+              "emailId": "soniaYadhav@organisation.com",
+              "childNodes": []
+            },
+            {
+              "designation": "Team Member",
+              "name": "Raguveer Singh",
+              "level": "1.0.1",
+              "type": "employee",
+              "id": "teamMember_1.0.1",
+              "phoneNumber": 9555679277,
+              "emailId": "raghuveerSingh@organisation.com",
+              "childNodes": []
+            }
+          ]
         },
         {
-            "designation": "Head of engineering",
-            "name": "Sreenath",
-            "level": "1.1",
-            "type": "employee",
-            "id": "headOfEngineering_1.1",
-            "phoneNumber": 9849429277,
-            "emailId": "Sreenath@organisation.com",
-            "childNodes": [
-                {
-                    "id": "deutscheBankGermany_1.1",
-                    "name": "Deutsche Bank Germany",
-                    "type": "team",
-                    "childNodes": [
-                        {
-                            "designation": "Team Member",
-                            "name": "Sagar",
-                            "level": "1.1.0",
-                            "type": "employee",
-                            "id": "teamMember_1.1.0",
-                            "phoneNumber": 9555929277,
-                            "emailId": "soniaYadhav@organisation.com",
-                            "childNodes": []
-                        },
-                        {
-                            "designation": "Team Member",
-                            "name": "Suraj",
-                            "level": "1.1.1",
-                            "type": "employee",
-                            "id": "teamMember_1.1.1",
-                            "phoneNumber": 9555679277,
-                            "emailId": "raghuveerSingh@organisation.com",
-                            "childNodes": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "designation": "Head of design",
-            "name": "Sudesh",
-            "level": "1.2",
-            "type": "employee",
-            "id": "headOfDesign_1.2",
-            "phoneNumber": 9849455277,
-            "emailId": "Sudesh@organisation.com",
-            "childNodes": [
-                {
-                    "id": "citiBank_1.2",
-                    "name": "Citi Bank",
-                    "type": "team",
-                    "childNodes": [
-                        {
-                            "designation": "Team Member",
-                            "name": "Madhan",
-                            "level": "1.2.0",
-                            "type": "employee",
-                            "id": "teamMember_1.2.0",
-                            "phoneNumber": 9555929277,
-                            "emailId": "soniaYadhav@organisation.com",
-                            "childNodes": []
-                        },
-                        {
-                            "designation": "Team Member",
-                            "name": "Vishal",
-                            "level": "1.2.1",
-                            "type": "employee",
-                            "id": "teamMember_1.2.1",
-                            "phoneNumber": 9555679277,
-                            "emailId": "raghuveerSingh@organisation.com",
-                            "childNodes": []
-                        }
-                    ]
-                }
-            ]
+          "id": "IngSpain_1.0",
+          "name": "ING Spain",
+          "type": "team",
+          "childNodes": [
+            {
+              "designation": "Team Member",
+              "name": "Sailaja",
+              "level": "1.0.0",
+              "type": "employee",
+              "id": "teamMember_1.0.0_1",
+              "phoneNumber": 9555929277,
+              "emailId": "soniaYadhav@organisation.com",
+              "childNodes": []
+            },
+            {
+              "designation": "Team Member",
+              "name": "Neelam",
+              "level": "1.0.1",
+              "type": "employee",
+              "id": "teamMember_1.0.1_1",
+              "phoneNumber": 9555679277,
+              "emailId": "raghuveerSingh@organisation.com",
+              "childNodes": []
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "designation": "Head of engineering",
+      "name": "Sreenath",
+      "level": "1.1",
+      "type": "employee",
+      "id": "headOfEngineering_1.1",
+      "phoneNumber": 9849429277,
+      "emailId": "Sreenath@organisation.com",
+      "childNodes": [
+        {
+          "id": "deutscheBankGermany_1.1",
+          "name": "Deutsche Bank Germany",
+          "type": "team",
+          "childNodes": [
+            {
+              "designation": "Team Member",
+              "name": "Sagar",
+              "level": "1.1.0",
+              "type": "employee",
+              "id": "teamMember_1.1.0",
+              "phoneNumber": 9555929277,
+              "emailId": "soniaYadhav@organisation.com",
+              "childNodes": []
+            },
+            {
+              "designation": "Team Member",
+              "name": "Suraj",
+              "level": "1.1.1",
+              "type": "employee",
+              "id": "teamMember_1.1.1",
+              "phoneNumber": 9555679277,
+              "emailId": "raghuveerSingh@organisation.com",
+              "childNodes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "designation": "Head of design",
+      "name": "Sudesh",
+      "level": "1.2",
+      "type": "employee",
+      "id": "headOfDesign_1.2",
+      "phoneNumber": 9849455277,
+      "emailId": "Sudesh@organisation.com",
+      "childNodes": [
+        {
+          "id": "citiBank_1.2",
+          "name": "Citi Bank",
+          "type": "team",
+          "childNodes": [
+            {
+              "designation": "Team Member",
+              "name": "Madhan",
+              "level": "1.2.0",
+              "type": "employee",
+              "id": "teamMember_1.2.0",
+              "phoneNumber": 9555929277,
+              "emailId": "soniaYadhav@organisation.com",
+              "childNodes": []
+            },
+            {
+              "designation": "Team Member",
+              "name": "Vishal",
+              "level": "1.2.1",
+              "type": "employee",
+              "id": "teamMember_1.2.1",
+              "phoneNumber": 9555679277,
+              "emailId": "raghuveerSingh@organisation.com",
+              "childNodes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

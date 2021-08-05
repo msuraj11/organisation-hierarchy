@@ -1,0 +1,136 @@
+[
+	{
+		"designation": "CEO",
+		"name": "Vijaypal Singh",
+		"level": 0,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9652429277,
+    "emailId": "VijaypalSingh@organisation.com",
+    "teams": [],
+		"reportees": ["Head of staff/HR", "Head of engineering", "Head of design"]
+	},
+	{
+		"designation": "Head of staff/HR",
+		"name": "Sonali",
+		"level": 1,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9652929277,
+		"emailId": "Sonali@organisation.com",
+		"teams": ["ING Australia", "ING Spain"],
+    "reportees": [],
+    "belongToTeam": ""
+	},
+	{
+		"designation": "Head of engineering",
+		"name": "Sreenath",
+		"level": 1,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9849429277,
+		"emailId": "Sreenath@organisation.com",
+		"teams": ["Deutsche Bank Germany"],
+    "reportees": [],
+    "belongToTeam": ""
+	},
+	{
+		"designation": "Head of design",
+		"name": "Sudesh",
+		"level": 1,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9849455277,
+		"emailId": "Sudesh@organisation.com",
+		"teams": ["Citi Bank"],
+    "reportees": [],
+    "belongToTeam": ""
+	},
+	{
+		"designation": "Group HR",
+		"name": "Sonia Yadhav",
+		"level": 2,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9555929277,
+		"emailId": "soniaYadhav@organisation.com",
+		"reportees": [],
+		"belongToTeam": "ING Australia"
+	},
+	{
+		"designation": "Group HR",
+		"name": "Raguveer Singh",
+		"level": 2,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9555679277,
+		"emailId": "raghuveerSingh@organisation.com",
+		"reportees": [],
+		"belongToTeam": "ING Australia"
+	},
+	{
+		"designation": "Group HR",
+		"name": "Sailaja",
+		"level": 2,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9555929277,
+		"emailId": "sailaja@organisation.com",
+		"reportees": [],
+		"belongToTeam": "ING Spain"
+	},
+	{
+		"designation": "Group HR",
+		"name": "Neelam",
+		"level": 2,
+		"type": "employee",
+		"id": "",
+		"phoneNumber": 9555679277,
+		"reportees": [],
+		"belongToTeam": "ING Spain"
+  },
+  {
+    "designation": "Team Lead",
+    "name": "Sagar",
+    "level": 2,
+    "type": "employee",
+    "id": "",
+    "phoneNumber": 9555929277,
+    "emailId": "sagar@organisation.com",
+    "reportees": [],
+		"belongToTeam": "Deutsche Bank Germany"
+  },
+  {
+    "designation": "Senior Software Engineer",
+    "name": "Suraj",
+    "level": 2,
+    "type": "employee",
+    "id": "",
+    "phoneNumber": 9555679277,
+    "emailId": "suraj@organisation.com",
+    "reportees": [],
+	"belongToTeam": "Deutsche Bank Germany"
+  },
+  {
+    "designation": "Design Lead",
+    "name": "Madhan",
+    "level": 2,
+    "type": "employee",
+    "id": "",
+    "phoneNumber": 9555929277,
+    "emailId": "madhan@organisation.com",
+    "reportees": [],
+	  "belongToTeam": "Citi Bank"
+  },
+  {
+    "designation": "Design Lead",
+    "name": "Vishal",
+    "level": 2,
+    "type": "employee",
+    "id": "",
+    "phoneNumber": 9555679277,
+    "emailId": "vishal@organisation.com",
+    "reportees": [],
+	  "belongToTeam": "Citi Bank"
+  }
+]

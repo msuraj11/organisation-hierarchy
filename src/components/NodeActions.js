@@ -49,7 +49,7 @@ const NodeActions = ({options}) => {
               <TextField
                 id={key}
                 label={key}
-                variant="standard"  
+                variant="standard"
                 name={key}
                 size="small"
                 value={nodeData[`${node}`]}
