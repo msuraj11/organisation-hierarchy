@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {map, isEmpty, omit} from 'lodash';
 import {TextField, MenuItem} from '@material-ui/core';
+import {Close} from "@material-ui/icons";
 import { getDefaultPatternForNode } from '../helpers/patterns';
 
-const NodeActions = ({options}) => {
+const NodeActions = ({options, toggleAction}) => {
   const [position, setPostion] = useState('');
   const [nodeData, setNodeData] = useState({
     name: '',
@@ -25,6 +26,7 @@ const NodeActions = ({options}) => {
 
   return (
     <div className="actions">
+      <div className="close-action" onClick={toggleAction}><Close /></div>
       <TextField
         id="standard-select-position-native"
         select

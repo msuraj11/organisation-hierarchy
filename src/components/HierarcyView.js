@@ -31,7 +31,7 @@ const StyledTreeItem = withStyles((theme) => ({
     return (<TreeItem
         label={
           <Box sx={{ display: 'flex', alignItems: 'center', p: 0.5, pr: 0 }}>
-            <Typography variant="span" sx={{ fontWeight: 'inherit', flexGrow: 1 }}>
+            <Typography variant="overline" sx={{ fontWeight: 'inherit', flexGrow: 1 }}>
               {labelText}
             </Typography>
             <IconButton size="small" onClick={(e) => onInfoClick(e, nodeData)}><InfoOutlined fontSize="small" /></IconButton>
@@ -62,7 +62,7 @@ const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
           nodeData={omit(data, ['childNodes'])}
           labelText={`${name} - ${designation}`}
           onInfoClick={getNodeDetails}
-          onAddClick={() => onAddClick(data)}
+          onAddClick={(e) => onAddClick(e, data)}
         >
           {childNodes.length > 0 &&
             childNodes.map(hod => (
@@ -72,7 +72,7 @@ const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
                 nodeData={omit(hod, ['childNodes'])}
                 labelText={`${hod.name} - ${hod.designation}`}
                 onInfoClick={getNodeDetails}
-                onAddClick={() => onAddClick(hod)}
+                onAddClick={(e) => onAddClick(e, hod)}
               >
                 {hod.childNodes.length > 0 &&
                   hod.childNodes.map(team => (
@@ -82,7 +82,7 @@ const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
                       nodeData={omit(team, ['childNodes'])}
                       labelText={team.name}
                       onInfoClick={getNodeDetails}
-                      onAddClick={() => onAddClick(team)}
+                      onAddClick={(e) => onAddClick(e, team)}
                     >
                       {team.childNodes.length > 0 &&
                         team.childNodes.map(member => (
@@ -92,7 +92,7 @@ const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
                             nodeData={omit(member, ['childNodes'])}
                             labelText={member.name}
                             onInfoClick={getNodeDetails}
-                            onAddClick={() => onAddClick(member)}
+                            onAddClick={(e) => onAddClick(e, member)}
                           />
                         ))
                       }

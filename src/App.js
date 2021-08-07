@@ -30,18 +30,19 @@ function App() {
     toggler(true);
   };
 
-  const handleAddClick = nodeData => {
+  const handleAddClick = (e, nodeData) => {
+    e.stopPropagation();
     actionToggler(true);
   }
 
   return (
-    <div className="container">
+    <div className={`container${toggleActions ? '' : ' flex-center'}`}>
       <h2 className="header">Organisation Hierarchy</h2>
       <NodeDetails nodeDetailsObj={nodeDetails} open={toggleDetails} handleClose={() => {toggler(false);}} />
       <HierarchyView data={data} getNodeDetails={onNodeClick} handleAddClick={handleAddClick} />
       {toggleActions &&
         <div className="node-details-action">
-          <NodeActions options={options} />
+          <NodeActions options={options} toggleAction={() => {actionToggler(false);}} />
         </div>
       }
     </div>
