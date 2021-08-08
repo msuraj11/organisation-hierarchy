@@ -42,7 +42,7 @@ const StyledTreeItem = withStyles((theme) => ({
       />)
     });
 
-const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
+const HierarchyView = ({data, getNodeDetails, handleAddClick, dynamicClassName}) => {
   const {designation, name, id, childNodes} = data;
 
   const onAddClick = (nodeData) => {
@@ -50,7 +50,7 @@ const HierarchyView = ({data, getNodeDetails, handleAddClick}) => {
   };
 
   return (
-    <div className="tree-block slide-left">
+    <div className={`tree-block ${dynamicClassName}`}>
       <TreeView
         defaultExpanded={["CEO_0"]}
         defaultCollapseIcon={<Remove className="remove" />}

@@ -17,8 +17,12 @@
   max-width: 1300px;
 }
 
-.flex-center {
-  justify-content: center;
+.slide-center {
+  transform: translateX(50%);
+}
+
+.slide-left {
+  transform: translateX(0);
 }
 
 .close-action {
@@ -36,6 +40,18 @@
   flex: 0.4 0 auto;
   overflow: auto;
   padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-out {
+  opacity: 0;
+  display: none;
+  transform: translateY(0);
 }
 
 .node-details-action {
@@ -43,6 +59,7 @@
   flex-grow: 1;
   border-left: 2px solid rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+  transition: all 1s ease-in-out;
 }
 
 .MuiFormControl-root {

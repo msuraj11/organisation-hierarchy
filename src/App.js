@@ -11,8 +11,9 @@ function App() {
   const [data, setData] = useState({...demoData});
   const [options, setOptions] = useState({});
   const [toggleDetails, toggler] = useState(false);
-  const [toggleActions, actionToggler] = useState(false);
+  const [toggleActionsBlock, actionToggler] = useState(false);
   const [nodeDetails, setNodeDetails] = useState({});
+  const [dynamicClassName, setClassName] = useState('slide-center');
   useEffect(() => {
     if (!isEmpty(data)) {
       setOptions({...getOptionsFromData(data)});
@@ -32,19 +33,23 @@ function App() {
 
   const handleAddClick = (e, nodeData) => {
     e.stopPropagation();
+    setClassName('slide-left');
     actionToggler(true);
   }
 
+  const handleToggleAction = () => {
+    actionToggler(false);
+    setClassName('slide-center');
+  }
+
   return (
-    <div className={`container${toggleActions ? '' : ' flex-center'}`}>
+    <div className="container">
       <h2 className="header">Organisation Hierarchy</h2>
       <NodeDetails nodeDetailsObj={nodeDetails} open={toggleDetails} handleClose={() => {toggler(false);}} />
-      <HierarchyView data={data} getNodeDetails={onNodeClick} handleAddClick={handleAddClick} />
-      {toggleActions &&
-        <div className="node-details-action">
-          <NodeActions options={options} toggleAction={() => {actionToggler(false);}} />
-        </div>
-      }
+      <HierarchyView data={data} getNodeDetails={onNodeClick} handleAddClick={handleAddClick} dynamicClassName={dynamicClassName} />
+      <div className={`node-details-action${toggleActionsBlock ? ' slide-in' : ' slide-out'}`}>
+          <NodeActions options={options} toggleAction={handleToggleAction} />
+      </div>
     </div>
   );
 }
