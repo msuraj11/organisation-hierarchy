@@ -1,7 +1,22 @@
 import React from 'react';
 import {map, omit} from 'lodash';
-import {Dialog, DialogTitle, List, ListItem, ListItemAvatar, ListItemText, Avatar} from '@material-ui/core';
-import {Person, Work, Fingerprint, PhoneIphone, Email, ClearAll} from '@material-ui/icons';
+import {
+  Dialog,
+  DialogTitle,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Avatar
+} from '@mui/material';
+import {
+  Person,
+  Work,
+  Fingerprint,
+  PhoneIphone,
+  Email,
+  ClearAll
+} from '@mui/icons-material';
 
 const iconMap = {
   designation: <Work />,
@@ -10,7 +25,7 @@ const iconMap = {
   phoneNumber: <PhoneIphone />,
   emailId: <Email />,
   level: <ClearAll />
-}
+};
 
 const NodeDetails = ({nodeDetailsObj, handleClose, open}) => {
   const {type} = nodeDetailsObj;
@@ -18,13 +33,11 @@ const NodeDetails = ({nodeDetailsObj, handleClose, open}) => {
   return (
     <Dialog onClose={handleClose} open={open}>
       <DialogTitle>{`${isEmployee ? 'Employee' : 'Team'} Details`}</DialogTitle>
-      <List sx={{ pt: 0 }}>
+      <List sx={{pt: 0}}>
         {map(omit(nodeDetailsObj, ['type']), (item, key) => (
           <ListItem key={key}>
             <ListItemAvatar>
-              <Avatar>
-                {iconMap[key]}
-              </Avatar>
+              <Avatar>{iconMap[key]}</Avatar>
             </ListItemAvatar>
             <ListItemText primary={item} />
           </ListItem>
